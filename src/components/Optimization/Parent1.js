@@ -5,7 +5,7 @@ function Parent1({ children }) {
   console.log("parent1 render", count);
   return (
     <div style={{ marginBottom: "20px" }}>
-      <span>{count}</span>
+      <span>Parent {count}</span>
       <button onClick={() => setCount(count + 1)}>+</button>
       {children}
     </div>
