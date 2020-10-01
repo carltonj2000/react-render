@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ArrayUseState from "./components/ImutableState/ArrayUseState";
+import ObjectUseState from "./components/ImutableState/ObjectUseState";
+import Child1 from "./components/Optimization/Child1";
+import Parent1 from "./components/Optimization/Parent1";
+import Parent from "./components/ParentChild/Parent";
+import UseReducer from "./components/UseReducer/UseReducer";
+import UseState from "./components/UseState/UseState";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Parent1>
+        <Child1 />
+      </Parent1>
+      <Parent />
+      <ArrayUseState />
+      <ObjectUseState />
+      <UseReducer />
+      <UseState />
     </div>
   );
 }
