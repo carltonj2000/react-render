@@ -10,6 +10,7 @@ function Parent5() {
     lname: "Wayne",
   };
 
+  const handleClick = () => {};
   console.log("parent5 render", count);
   return (
     <div style={{ marginBottom: "20px" }}>
