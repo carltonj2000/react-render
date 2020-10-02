@@ -4,6 +4,7 @@ import ArrayUseState from "./components/ImutableState/ArrayUseState";
 import ObjectUseState from "./components/ImutableState/ObjectUseState";
 import Parent3 from "./components/IncorrectOptimaization/Parent3";
 import Parent4 from "./components/IncorrectOptimaization/Parent4";
+import Parent5 from "./components/IncorrectOptimaization/Parent5";
 import Child1 from "./components/Optimization/Child1";
 import GrandParent1 from "./components/Optimization/GrandParent";
 import Parent1 from "./components/Optimization/Parent1";
@@ -15,6 +16,7 @@ import UseState from "./components/UseState/UseState";
 function App() {
   return (
     <div className="App">
+      <Parent5 />
       <Parent4 />
       <Parent3 />
       <Parent2 />
