@@ -1,10 +1,16 @@
 import React from "react";
 
-function Child5({ name, person: { fname, lname } }) {
+function Child5({ name, person, handleClick }) {
   console.log("Child5 render");
   return (
     <div>
-      Hello {name} and {fname} {lname}
+      Hello {name}
+      {person && (
+        <span>
+          and {person.fname} {person.lname}
+        </span>
+      )}
+      {handleClick && <span>handleClick</span>}
     </div>
   );
 }

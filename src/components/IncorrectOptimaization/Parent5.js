@@ -11,6 +11,7 @@ function Parent5() {
   };
 
   const handleClick = () => {};
+
   console.log("parent5 render", count);
   return (
     <div style={{ marginBottom: "20px" }}>
@@ -18,6 +19,7 @@ function Parent5() {
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={() => setName("Joseph")}>Change name</button>
       <Child5 {...{ name, person }} />
+      <Child5 {...{ name, handleClick }} />
     </div>
   );
 }
